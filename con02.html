@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        overflow-x: clip;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      /* con02-mo*/
+      .con02-mo {
+        padding: 3vw 2vw;
+        position: relative;
+      }
+      /* left */
+      .con02-mo .left h2 {
+        display: none;
+      }
+      .con02-mo .left h3 {
+        font-size: 5vw;
+        margin-bottom: 3vw;
+      }
+
+      /* left wrap화살표 */
+      .con02-mo .wrap {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 5vw;
+      }
+      .con02-mo .wrap div {
+        display: flex;
+        align-items: center;
+      }
+      .con02-mo .wrap ul {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+      }
+      .con02-mo .wrap p {
+        font-size: 25px;
+        margin-right: 20px;
+      }
+      .con02-mo .wrap li {
+        transform: translateX(-20px);
+        transition: 0.5s;
+      }
+
+      .con02-mo .wrap:hover li {
+        transform: translateX(0);
+      }
+
+      /* right */
+      .con02-mo .soldout {
+        width: 40px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+      }
+      .con02-mo .right {
+        width: 1000px;
+        height: 90vh;
+        display: flex;
+        gap: 1vw;
+      }
+
+      .con02-mo .right div {
+        width: 450px;
+        flex-shrink: 0;
+      }
+
+      .con02-mo .right .imgWrap {
+        width: 100%;
+        height: 80vw;
+        overflow: hidden;
+      }
+      .con02-mo .right .imgWrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .con02-mo .right img {
+        transition: 0.5s;
+      }
+
+      .con02-mo .right img:hover {
+        transform: scale(1.2);
+      }
+
+      .con02-mo .right img:hover {
+        transform: scale(1.2);
+      }
+      .con02-mo .right .price {
+        margin: 1vw 0 0.5vw;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="con02-mo">
+      <div class="left">
+        <h2>Take the Initiative</h2>
+        <h3>CURATION</h3>
+        <p>
+          프라이빗 케어 루틴을 통해 <br />자신만의 속도로 축적해 가는<br />
+          고유한 흐름, 그 확실한 변화의 힘
+        </p>
+        <div class="wrap">
+          <a href="#">
+            <div>
+              <p>Shop All</p>
+              <ul>
+                <li><i class="fa-solid fa-arrow-right"></i></li>
+                <li><i class="fa-solid fa-arrow-right"></i></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="leftImg">
+          <a href="#">
+            <div class="imgWrap">
+              <img
+                src="img/imgi_13_ac04117e41efc48527450c63a515d80e.png"
+                alt=""
+              />
+            </div>
+            [1분 완판템] 톰 더 글로우 시그니처 뷰티디바이스</a
+          >
+          <p class="price">599,000원</p>
+          <p class="soldout">품절</p>
+        </div>
+        <div>
+          <a href="#">
+            <div class="imgWrap">
+              <img
+                src="img/imgi_16_540809e10ef9c4e952e0630d7faad73a.jpg"
+                alt=""
+              />
+            </div>
+            톰 더 글로우 키트</a
+          >
+          <p class="price">990,000원</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
